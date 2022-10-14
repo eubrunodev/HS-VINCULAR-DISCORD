@@ -1,0 +1,23 @@
+Menus:
+  Menu:
+    Nome: '&7Menu de Vinculação'
+  Gerar:
+    Nome: '&6Gerar Código'
+    Lore:
+    - ''
+    - '&eClique aqui para gerar um &6Código'
+    - ''
+    - '&eCaso você já tenha um código, verifique seu &bStatus'
+    - ''
+    Skull-URL: 'http://textures.minecraft.net/texture/adaa574a2e5248e61b8566629b457b5101420eff14a16c4774ed2fa83535a0ba'
+  Discord:
+    Link: 'seu link aqui'
+    Nome: '&fServidor do &9Discord'
+    Lore:
+    - ''
+    - '&dClique aqui, para entrar em nosso &9Discord'
+    - ''
+    Skull-URL: 'http://textures.minecraft.net/texture/7873c12bffb5251a0b88d5ae75c7247cb39a75ff1a81cbe4c8a39b311ddeda'
+  Info:
+    Nome: '&bStatus: {status}'
+    Skull-URL: 'http://textures.minecraft.net/texture/8d9b63c3b745f5df851175972eefd77eca5269d4867c4eda1594ff3e6634658'

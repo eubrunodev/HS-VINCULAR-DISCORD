@@ -1,0 +1,7 @@
+name: hs_VincularDiscord
+version: 1.0
+main: me.eubrunodev.VincularMain
+commands:
+ vincular:
+   aliases: [vinculardiscord]
+ vinculador:
