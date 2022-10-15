@@ -13,7 +13,7 @@ public class StaffCommands extends VincularManager implements CommandExecutor {
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		if(!(sender instanceof Player)) {
-			Bukkit.getConsoleSender().sendMessage("§cComando so para jogadores");
+			Bukkit.getConsoleSender().sendMessage("Â§cComando so para jogadores");
 			return true;
 		}
 		
@@ -23,32 +23,32 @@ public class StaffCommands extends VincularManager implements CommandExecutor {
 			if(args.length >=1) {
 				if(args[0].equalsIgnoreCase("set")) {
 					if(args.length < 2) {
-						p.sendMessage(prefix+"§cUse: /vinculador set <jogador>");
+						p.sendMessage(prefix+"Â§cUse: /vinculador set <jogador>");
 						return true;
 					}
 					String target = String.valueOf(args[1]);
 					if(staffGetCodigo(target) != null) {
-						p.sendMessage("§cO jogador §d"+target+" §cjá possuí um código!");
+						p.sendMessage("Â§cO jogador Â§d"+target+" Â§cjÃ¡ possui um cÃ³digo!");
 					} else {
 						try {
 						staffSetCodigo(target, gerar_key());
-						p.sendMessage("§aNovo código setado no jogador §d"+target+" §aNovo Código: §d"+staffGetCodigo(target));
+						p.sendMessage("Â§aNovo cÃ³digo setado no jogador Â§d"+target+" Â§aNovo CÃ³digo: Â§d"+staffGetCodigo(target));
 						} catch (Exception e) {
 						// TODO: handle exception
 						}
 					}
 				} else if(args[0].equalsIgnoreCase("remove")) {
 					if(args.length < 2) {
-						p.sendMessage(prefix+"§cUse: /vinculador remove <jogador>");
+						p.sendMessage(prefix+"Â§cUse: /vinculador remove <jogador>");
 						return true;
 					}
 					String target = String.valueOf(args[1]);
 					if(staffGetCodigo(target) == null) {
-						p.sendMessage("§cO jogador §d"+target+" §cnão pussuí um código!");
+						p.sendMessage("Â§cO jogador Â§d"+target+" Â§cnÃ£o pussui um cÃ³digo!");
 					} else {
 						try {
 							staffRemoveCodigo(target, staffGetCodigo(target));
-							p.sendMessage("§aO jogador §d"+target+" §ateve seu §dcódigo §aremovido!");
+							p.sendMessage("Â§aO jogador Â§d"+target+" Â§ateve seu Â§dcÃ³digo Â§aremovido!");
 						} catch (Exception e) {
 							// TODO: handle exception
 						}
